@@ -119,7 +119,7 @@
         await chart.draw(view, options);
 
         google.visualization.events.addListener(chart, 'ready', function () {
-            chart_div.innerHTML = '<svg src="' + chart.getImageURI() + '">';
+            chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
         });
 
     }
